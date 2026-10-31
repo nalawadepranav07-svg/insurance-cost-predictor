@@ -1,0 +1,19 @@
+{
+  "name": "Medical Cost Personal Dataset (insurance.csv)",
+  "source_url": "https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/insurance.csv",
+  "original_source": "Kaggle: 'Medical Cost Personal Datasets' (mirichoi0218/insurance), derived from Brett Lantz, 'Machine Learning with R' (Packt)",
+  "licence": "Kaggle lists the dataset under the Open Database Licence (ODbL) with contents under DbCL v1.0; verify terms before redistributing.",
+  "retrieved_utc": "2026-10-31T08:16:55+00:00",
+  "sha256": "505c1cbc2e63d0363bac59501563df2530aadf4cdb9cfee226f4ef32f5468281",
+  "rows": 1338,
+  "columns": [
+    "age",
+    "sex",
+    "bmi",
+    "children",
+    "smoker",
+    "region",
+    "charges"
+  ],
+  "target_unit": "USD (historical annual medical charges, as recorded in the dataset)"
+}

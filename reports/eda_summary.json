@@ -1,0 +1,180 @@
+{
+  "shape": [
+    1338,
+    7
+  ],
+  "dtypes": {
+    "age": "int64",
+    "sex": "str",
+    "bmi": "float64",
+    "children": "int64",
+    "smoker": "str",
+    "region": "str",
+    "charges": "float64"
+  },
+  "missing": {
+    "age": 0,
+    "sex": 0,
+    "bmi": 0,
+    "children": 0,
+    "smoker": 0,
+    "region": 0,
+    "charges": 0
+  },
+  "duplicate_rows": 1,
+  "describe": {
+    "age": {
+      "count": 1338.0,
+      "mean": 39.207,
+      "std": 14.05,
+      "min": 18.0,
+      "25%": 27.0,
+      "50%": 39.0,
+      "75%": 51.0,
+      "max": 64.0
+    },
+    "bmi": {
+      "count": 1338.0,
+      "mean": 30.663,
+      "std": 6.098,
+      "min": 15.96,
+      "25%": 26.296,
+      "50%": 30.4,
+      "75%": 34.694,
+      "max": 53.13
+    },
+    "children": {
+      "count": 1338.0,
+      "mean": 1.095,
+      "std": 1.205,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 2.0,
+      "max": 5.0
+    },
+    "charges": {
+      "count": 1338.0,
+      "mean": 13270.422,
+      "std": 12110.011,
+      "min": 1121.874,
+      "25%": 4740.287,
+      "50%": 9382.033,
+      "75%": 16639.913,
+      "max": 63770.428
+    }
+  },
+  "target_skewness": 1.5158796580240388,
+  "log_target_skewness": -0.08981728740026824,
+  "target_outliers_iqr": {
+    "lower_fence": -13109.1508975,
+    "upper_fence": 34489.350562499996,
+    "n_outliers": 139
+  },
+  "bmi_outliers_iqr": {
+    "lower_fence": 13.7,
+    "upper_fence": 47.290000000000006,
+    "n_outliers": 9
+  },
+  "correlation_with_target": {
+    "age": 0.299,
+    "bmi": 0.198,
+    "children": 0.068
+  },
+  "mean_charges_by": {
+    "smoker": {
+      "no": {
+        "count": 1064,
+        "mean": 8434.27,
+        "median": 7345.41
+      },
+      "yes": {
+        "count": 274,
+        "mean": 32050.23,
+        "median": 34456.35
+      }
+    },
+    "sex": {
+      "female": {
+        "count": 662,
+        "mean": 12569.58,
+        "median": 9412.96
+      },
+      "male": {
+        "count": 676,
+        "mean": 13956.75,
+        "median": 9369.62
+      }
+    },
+    "region": {
+      "northeast": {
+        "count": 324,
+        "mean": 13406.38,
+        "median": 10057.65
+      },
+      "northwest": {
+        "count": 325,
+        "mean": 12417.58,
+        "median": 8965.8
+      },
+      "southeast": {
+        "count": 364,
+        "mean": 14735.41,
+        "median": 9294.13
+      },
+      "southwest": {
+        "count": 325,
+        "mean": 12346.94,
+        "median": 8798.59
+      }
+    },
+    "children": {
+      "0": {
+        "count": 574,
+        "mean": 12365.98,
+        "median": 9856.95
+      },
+      "1": {
+        "count": 324,
+        "mean": 12731.17,
+        "median": 8483.87
+      },
+      "2": {
+        "count": 240,
+        "mean": 15073.56,
+        "median": 9264.98
+      },
+      "3": {
+        "count": 157,
+        "mean": 15355.32,
+        "median": 10600.55
+      },
+      "4": {
+        "count": 25,
+        "mean": 13850.66,
+        "median": 11033.66
+      },
+      "5": {
+        "count": 18,
+        "mean": 8786.04,
+        "median": 8589.57
+      }
+    }
+  },
+  "categorical_balance": {
+    "sex": {
+      "male": 0.505,
+      "female": 0.495
+    },
+    "smoker": {
+      "no": 0.795,
+      "yes": 0.205
+    },
+    "region": {
+      "southeast": 0.272,
+      "southwest": 0.243,
+      "northwest": 0.243,
+      "northeast": 0.242
+    }
+  }
+}

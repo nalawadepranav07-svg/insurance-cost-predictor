@@ -1,0 +1,70 @@
+{
+  "dataset": {
+    "name": "Medical Cost Personal Dataset (insurance.csv)",
+    "url": "https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/insurance.csv",
+    "raw_path": "data/raw/insurance.csv",
+    "manifest_path": "data/raw/MANIFEST.json",
+    "expected_sha256": "505c1cbc2e63d0363bac59501563df2530aadf4cdb9cfee226f4ef32f5468281",
+    "target": "charges",
+    "target_unit": "USD (historical annual medical charges, as recorded in the dataset)"
+  },
+  "schema": {
+    "numeric_features": [
+      "age",
+      "bmi",
+      "children"
+    ],
+    "categorical_features": [
+      "sex",
+      "smoker",
+      "region"
+    ],
+    "categories": {
+      "sex": [
+        "female",
+        "male"
+      ],
+      "smoker": [
+        "no",
+        "yes"
+      ],
+      "region": [
+        "northeast",
+        "northwest",
+        "southeast",
+        "southwest"
+      ]
+    },
+    "bounds": {
+      "age": [
+        18,
+        64
+      ],
+      "bmi": [
+        15.0,
+        55.0
+      ],
+      "children": [
+        0,
+        5
+      ]
+    }
+  },
+  "training": {
+    "random_seed": 42,
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "log_target": false,
+    "tuning": {
+      "enabled": true,
+      "n_iter": 20,
+      "inner_cv_folds": 3
+    }
+  },
+  "paths": {
+    "model_path": "models/coverwise_model.joblib",
+    "metadata_path": "models/model_metadata.json",
+    "reports_dir": "reports",
+    "figures_dir": "reports/figures"
+  }
+}
